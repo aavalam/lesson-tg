@@ -16,9 +16,7 @@ class GameBoard
   def hit_or_miss
     @locations.include?(@guess) ? 'Hit' : 'Miss'
   end
-
   def remove_target
     @locations.delete(@guess)
   end
-
 end
